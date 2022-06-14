@@ -8,9 +8,9 @@ copyedit: false
 last_tested: '2021-03-26'
 steps:
 - title: Introduction
-- title: Step title
-- title: Step title
-- title: Step title
+- title: Sense the Environment
+- title: Display useful values
+- title: Sense Movement
 - title: Reflection
   knowledge_quiz:
     path: quiz1

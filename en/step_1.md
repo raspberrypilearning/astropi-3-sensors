@@ -11,10 +11,11 @@ In this project, <mark> short project description </mark>
 <mark>Objectives in language that learners will understand</mark>
 
 You will:
-+ 
-+ 
-+ 
-
++ Explain all sensors + IMU
++ Print sensor data
++ Round data values
++ Display sensor data on LEDs
+  
 --- no-print ---
 --- task ---
 ### Try it

@@ -1,4 +1,4 @@
-## Step title
+## Display useful values
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
@@ -8,6 +8,10 @@ Add an introductory sentence. What will learners achieve by the end of this step
 Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
 </div>
 </div>
+
++ Output float values to display - way too long/not useful
++ Round values using math library
++ Use f-strings to display values
 
 --- task ---
 
