@@ -1,20 +1,16 @@
 ## Introduction
 
-In this project, <mark> short project description </mark>
-
-<mark>Boxout (wherever wanted/needed) </mark>
+In this project, you will explore the sensors available on the SenseHAT and output the data in easy to read ways.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Term**</span> description of term or interesting phrase.
+The <span style="color: #0faeb0">SenseHAT</span> is so named for all the different sensors it contains: a **Gyroscope** to tell when it is tilted, an **Accelerometer** to tell when it is moved, a **Magnetometer** to measure the magnetic radiation in the area, a **Thermometer** to measure temperature, a **Barometer** to measure the Barometric pressure, a light and colour sensor to detect ambient light and a **Hygrometer** to measure the humidity!
 </p>
 
-<mark>Objectives in language that learners will understand</mark>
-
 You will:
-+ Explain all sensors + IMU
-+ Print sensor data
-+ Round data values
-+ Display sensor data on LEDs
++ Explore the sensors and Inertial Measurement Unit (IMU)
++ Print live sensor data to the console
++ Round your data output to useful values  
++ Display the sensor data on the LED array
   
 --- no-print ---
 --- task ---
@@ -23,13 +19,14 @@ You will:
 <div style="flex-basis: 175px; flex-grow: 1">  
 Description of what to do or think about when looking at the example.
 </div>
+</div>
 <div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/485673032/?autostart=false" frameborder="0"></iframe>
+  <iframe src="https://trinket.io/embed/python/0102291d9e?outputOnly=true&runOption=console" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
-</div>
+
 --- /task ---
 --- /no-print ---
 
 --- print-only ---
-![Completed project](images/showcase_static.png)
+![Completed project](images/demo.png)
 --- /print-only ---
