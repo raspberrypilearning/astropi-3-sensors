@@ -21,7 +21,7 @@ Description of what to do or think about when looking at the example.
 </div>
 </div>
 <div class="scratch-preview" style="margin-left: 15px;">
-  <iframe src="https://trinket.io/embed/python/0102291d9e?outputOnly=true&runOption=console" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  <<iframe src="https://trinket.io/embed/python/0102291d9e?outputOnly=true&runOption=run&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 --- /task ---
