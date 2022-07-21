@@ -127,6 +127,7 @@ line_numbers: true
 line_number_start: 7
 line_highlights: 9-10
 ---
+#Take sensor reading
 t = sense.get_temperature()
 p = sense.get_pressure()
 h = sense.get_humidity()
