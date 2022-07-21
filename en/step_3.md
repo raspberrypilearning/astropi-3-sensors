@@ -54,10 +54,31 @@ h = round(h,1)
 
 --- /task ---
 
+--- task ---
 
+**Debug:** 
++ What does your error message say? Which line has an error?
++ Does your code match the code above?
 
-+ Output float values to display - way too long/not useful
-+ Round values using math library
+--- collapse ---
+---
+title: SyntaxError
+---
++ Have you got both brackets in your commands? `round()`
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: NameError
+---
++ Have you spelled `round` correctly?
++ Have you tried to round `t`, `p` and `h`, or something else?
+
+--- /collapse ---
+
+--- /task ---
+
 + Use f-strings to display values
 
 --- task ---
