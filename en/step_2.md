@@ -69,7 +69,47 @@ print(t)
 
 --- task ---
 
-**Test:** Run your code. You should see the console print out a long number: 13.3096771666. This is the default simulated temperature of the senseHAT. Move the temperature slider and run your code again. It should print out something different that matches your new slider value.
+**Test:** Run your code. You should see the console print out a long number: 13.3096771666. This is the default simulated temperature of the SenseHAT. 
+
+--- /task ---
+
+--- task ---
+
+**Debug:** 
++ What does your error message say? Which line has an error?
++ Does your code match the code above?
+
+--- collapse ---
+---
+title: AttributeError
+---
++ Have you spelled `get_temperature` correctly?
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: SyntaxError
+---
++ Have you got both brackets in your command? `get_temperature()`
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: NameError
+---
++ Have you tried to print `t`, or something else?
+
+
+--- /collapse ---
+
+--- /task ---
+
+
+--- task ---
+
+**Try:** Move the temperature slider and run your code again. It should print out something different that matches your new slider value.
 
 --- /task ---
 
