@@ -4,9 +4,9 @@
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 In this step you will use the environmental sensors (thermometer, hygrometer, barometer) to collect information about the environment and print it to the console.
 </div>
-<div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
 </div>
+<div>
+<iframe src="https://trinket.io/embed/python/c15fa5285a?outputOnly=true&runOption=run&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 + Temp

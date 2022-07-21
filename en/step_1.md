@@ -17,7 +17,7 @@ You will:
 ### Try it
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Description of what to do or think about when looking at the example.
+Move the sliders at the top to change the simulated environment for the SenseHAT emulator. (You'll need to wait until the message scrolls that information again to see the change!)
 </div>
 </div>
 <div class="scratch-preview" style="margin-left: 15px;">
