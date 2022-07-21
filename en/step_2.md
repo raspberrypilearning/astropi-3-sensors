@@ -113,5 +113,86 @@ title: NameError
 
 --- /task ---
 
+You can also use the commands `get_pressure` and `get_humidity` to poll the barometer and hygrometer.
+
+--- task ---
+
+**Type:** On lines 9 and 10, add the following to your script:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 7
+line_highlights: 9-10
+---
+t = sense.get_temperature()
+p = sense.get_pressure()
+h = sense.get_humidity()
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Type:** Now `print` the new data in the same way as the temperature data:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 13 
+line_highlights: 15-16
+---
+#Print sensor data
+print(t)
+print(p)
+print(h)
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code. You should now see three numbers printed out for the temperature, pressure and humidity values.
+
+--- /task ---
+
+--- task ---
+
+**Debug:** 
++ What does your error message say? Which line has an error?
++ Does your code match the code above?
+
+--- collapse ---
+---
+title: AttributeError
+---
++ Have you spelled `get_pressure` and `get_humidity` correctly?
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: SyntaxError
+---
++ Have you got both brackets in your commands? `get_pressure()`
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: NameError
+---
++ Have you tried to print `p` and `h`, or something else?
+
+--- /collapse ---
+
+--- /task ---
+
+In the next step, you will take those long numbers and make them look neater and easier to read!
 
 --- save ---
