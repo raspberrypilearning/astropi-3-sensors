@@ -133,7 +133,6 @@ print("Humidity: " + str(h))
 `Pressure: 1013.0`
 `Humidity: 46.2`
 
-
 --- /task ---
 
 --- task ---
@@ -147,7 +146,7 @@ print("Humidity: " + str(h))
 title: SyntaxError
 ---
 + Have you got four brackets in your print commands? `print( str())`
-+ Have you got quotation marks at the start and end of your strings? `"Temperature: "`
++ Have you got quotation marks at the start and end of all your strings? `"Temperature: "`
 + Have you got a `+` sign between your string and the sensor value on each line?
 
 --- /collapse ---
@@ -156,12 +155,26 @@ title: SyntaxError
 ---
 title: NameError
 ---
-+ Have you spelled `round` correctly?
++ Have you spelled `print` correctly?
 + Have you tried to round `t`, `p` and `h`, or something else?
 
 --- /collapse ---
 
 --- /task ---
+
+--- task ---
+--- collapse ---
+---
+title: **Challenge:** Can you show your sensor values on the LED array?
+---
+
+Change the `print` on the final three lines of your code to `show_message`!
+
+
+--- /collapse ---
+
+--- /task ---
+
 
 
 --- save ---
