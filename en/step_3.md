@@ -4,9 +4,10 @@
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 In this step, you will round off your float values and convert them to strings so they can be used with the senseHAT LED array and printed in the console neatly.
 </div>
-<div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
 </div>
+<div>
+<iframe src="https://trinket.io/embed/python/c15fa5285a?outputOnly=true&runOption=run&start=result" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 </div>
  <p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
  A <strong>float</strong> value is short for **floating point**, and it really just means a number with a decimal point in it. We use **floats** when more precision is needed, but they look a little messy at first glance. A number without any decimal places is an **integer**, and it is a different sort of python data type.
@@ -163,6 +164,7 @@ title: NameError
 --- /task ---
 
 --- task ---
+
 --- collapse ---
 ---
 title: **Challenge:** Can you show your sensor values on the LED array?
