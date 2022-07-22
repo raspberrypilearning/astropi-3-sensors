@@ -1,42 +1,109 @@
-## Sense movement
+## Use images for display
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step you will explore the Inertial Measurement Unit (IMU) on the SenseHAT and use it to make the LED array do something. 
+In this step you will use the data collected from the SenseHAT sensors to display different colours or images  on the SenseHAT LED array.  
 </div>
 <div>
 Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
 </div>
 </div>
 
-<p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
-The Sense HAT has a movement sensor called an <strong>IMU</strong>, which measures the kinds of movement it experiences. It’s actually three sensors in one:
+Now that you can output useful information from our sensors, you can use the SenseHAT's LED array to display that information in an easy to read format that is visible at a glance. 
 
-+ A gyroscope: measures momentum and rotation
-+ An accelerometer: measures acceleration forces and can be used to find the direction of gravity
-+ A magnetometer: measures the Earth’s own magnetic field (a bit like a compass)
+You can use the array to display a single colour, as a simple readout for something like temperature. For example, if the temperature goes above a certain point or **threshold**, the SenseHAT will show red, but if below that point it will show blue.
+
+The first thing to do is create the rules for this in your program using an **if statement**.
+
+<p style='border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;'>
+**If statements** are logical blocks used in programming. They allow a computer to make decisions based on certain information, like how warm the room is. They are called **if** statements because they ask the computer to do something **if a certain condition is met**.
 </p>
 
-[[[generic-theory-pitch-roll-yaw]]]
+In this example, we are going to use the `sense.clear()` function to make the LED array change to a single colour using RGB values. The example uses red and blue, but you can use any colour you like!
 
-The `sense.get_accelerometer_raw()` method tells you the amount of G-force acting on each axis (x, y, z). If any axis has ±1G, then you know that axis is pointing downwards.
+[[[rpi-sensehat-display-colour]]]
 
- + Image change based on physical input - shake/hit/rotate
+[[[generic-theory-colours]]]
 
 --- task ---
 
-Another step of tasks to complete.
+**Type:** You will need to access the sleep library for this step, so must import it at the beginning of your program. At the top of your code, on the second line add:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 2
+---
+from sense_hat import SenseHat
+from time import sleep
+--- /code ---
+
+--- /task ---
+
+
+--- task ---
+
+**Type:** On line 25, beneath the line which reads `#If statement to check threshold` add the following lines to your code:
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 24 
+line_highlights: 
+---
+#If statement to check threshold
+if t >= 13:
+  sense.clear(255,0,0)
+  sleep(0.5)
+else:
+  sense.clear(0,0,255)
+  sleep(0.5)
+
+--- /code ---
+
+**Tip:** Make sure you get the indents in the right places! `if` and `else` should be in line, while the other lines are indented. 
 
 --- /task ---
 
 --- task ---
 
-Step content... 
-Can use:
-**Test:**
-**Choose:**
-**Tip:**
+**Test:** Run your code. You should see the LED array light up red or blue, depending on the value of the ambient temperature around your SenseHAT.  
 
 --- /task ---
+
+--- task ---
+
+**Debug:** 
++ What does your error message say? Which line has an error?
++ Does your code match the code above?
+
+--- collapse ---
+---
+title: SyntaxError
+---
++ Have you got a colon at the end of  your `if` statement? `if t >=13:`
++ Have you got an indent of four spaces before `sense.clear()` and `sleep()`?
++ Have you got closed the brackets at the end of `sense.clear()` and `sleep()`?
+
+--- /collapse ---
+
+--- /task ---
+
+--- task ---
+
+**Try:** Move the temperature slider and run your code again. You should see the colour change on the lED array.
+
+--- /task ---
+
+--- task ---
+
+
+
+--- /task ---
+
 
 --- save ---

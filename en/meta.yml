@@ -10,7 +10,7 @@ steps:
 - title: Introduction
 - title: Sense the Environment
 - title: Display useful values
-- title: Sense Movement
+- title: Use images for display
 - title: Reflection
   knowledge_quiz:
     path: quiz1
