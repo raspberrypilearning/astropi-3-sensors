@@ -177,5 +177,37 @@ for i in range(120):
 
 --- /task ---
 
+--- task ---
+
+--- task ---
+
+**Debug:** 
++ What does your error message say? Which line has an error?
++ Does your code match the code above?
+
+--- collapse ---
+---
+title: SyntaxError
+---
++ Have you missed a line with your indenting?
++ Do you have both brackets in your `for` loop?
++ Does your `for` loop have a colon at the end? `for i in range(120):` 
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: NameError
+---
++ Have you spelled `print` correctly?
++ Have you tried to round `t`, `p` and `h`, or something else?
+
+--- /collapse ---
+
+--- /task ---
+
+--- /task ---
+
+
 
 --- save ---
