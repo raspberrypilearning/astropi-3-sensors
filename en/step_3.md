@@ -32,12 +32,13 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 7
-line_highlights: 13-15
+line_highlights: 14-16
 ---
 #Take sensor reading
 t = sense.get_temperature()
 p = sense.get_pressure()
 h = sense.get_humidity()
+
 
 #Round sensor values
 t = round(t,1)
@@ -79,22 +80,88 @@ title: NameError
 
 --- /task ---
 
-+ Use f-strings to display values
+Now that your numbers are looking more readable, you need to add some text to make the output more easily understandable. To do that, we need to format the value as a **string**.
 
 --- task ---
 
-Another step of tasks to complete.
+**Edit:**  Change the argument in your `print` commands on lines 20,21 and 22 to match the following:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 19 
+line_highlights: 20-22
+---
+#Print sensor data
+print(str(t))
+print(str(p))
+print(str(h))
+
+--- /code ---
+
+Using `str()` converts the data values of any argument put in the brackets from numbers into a **string**, so they can be linked together with other strings in your program. Linking strings together into one long one is called **concatenation**.
 
 --- /task ---
 
 --- task ---
 
-Step content... 
-Can use:
-**Test:**
-**Choose:**
-**Tip:**
+**Edit:** Add another string to each of the `print` lines in your code to match the following:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 19 
+line_highlights: 20-22
+---
+#Print sensor data
+print("Temperature: " + str(t))
+print("Pressure: " + str(p))
+print("Humidity: " + str(h))
+
+--- /code ---
 
 --- /task ---
+
+--- task ---
+
+**Test:** Run your code. You should see an output that looks something like this:
+`Temperature: 13.3`
+`Pressure: 1013.0`
+`Humidity: 46.2`
+
+
+--- /task ---
+
+--- task ---
+
+**Debug:** 
++ What does your error message say? Which line has an error?
++ Does your code match the code above?
+
+--- collapse ---
+---
+title: SyntaxError
+---
++ Have you got four brackets in your print commands? `print( str())`
++ Have you got quotation marks at the start and end of your strings? `"Temperature: "`
++ Have you got a `+` sign between your string and the sensor value on each line?
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: NameError
+---
++ Have you spelled `round` correctly?
++ Have you tried to round `t`, `p` and `h`, or something else?
+
+--- /collapse ---
+
+--- /task ---
+
 
 --- save ---
