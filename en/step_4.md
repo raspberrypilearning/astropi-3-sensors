@@ -95,13 +95,85 @@ title: SyntaxError
 
 --- task ---
 
-**Try:** Move the temperature slider and run your code again. You should see the colour change on the lED array.
+**Try:** Move the temperature slider and run your code again. You should see the colour change on the LED array.
+
+--- /task ---
+
+The last step is to create a **loop** that will allow our sensors to check repeatedly and keep track of the temperature. Because you have added a `sleep` of 0.5 seconds to our program after each check of the sensors, create a loop that runs 60 times - this means your program will run for **30 seconds**. 
+
+--- task ---
+
+**Type:** On line 7 in your code, **above** where it reads `#Take sensor reading` add the following line:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 5 
+line_highlights: 7
+---
+sense = SenseHat()
+
+for i in range(120):
+#Take sensor reading
+
+--- /code ---
 
 --- /task ---
 
 --- task ---
 
+**Edit:** Select all the code below the line you just typed - everything from line 8 to the end. Press `Tab` on your keyboard to indent all this code and have it run inside your new `for` loop. 
 
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 9-33
+---
+from sense_hat import SenseHat
+from time import sleep
+
+
+sense = SenseHat()
+
+
+for i in range(120):
+  #Take sensor reading
+  t = sense.get_temperature()
+  p = sense.get_pressure()
+  h = sense.get_humidity()
+  
+  
+  #Round sensor values
+  t = round(t,1)
+  p = round(p,1)
+  h = round(h,1)
+  
+  
+  #Print sensor data
+  print("Temperature: " + str(t))
+  print("Pressure: " + str(p))
+  print("Humidity: " + str(h))
+  
+
+  #If statement to check threshold
+  if t >= 13:
+  sense.clear(255,0,0)
+    sleep(0.5)
+  else:
+    sense.clear(0,0,255)
+    sleep(0.5)
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run your code and move the temperature slider. You should see the LED array change colour between red and blue.
 
 --- /task ---
 
