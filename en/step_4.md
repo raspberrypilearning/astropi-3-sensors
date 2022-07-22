@@ -195,15 +195,6 @@ title: SyntaxError
 
 --- /collapse ---
 
---- collapse ---
----
-title: NameError
----
-+ Have you spelled `print` correctly?
-+ Have you tried to round `t`, `p` and `h`, or something else?
-
---- /collapse ---
-
 --- /task ---
 
 --- /task ---
